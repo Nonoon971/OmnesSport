@@ -10,7 +10,7 @@
 				<ul>
 					<xsl:for-each select="bibliotheque/livres">
 					<h5><xsl:value-of select="livre/titre" /></h5>
-				</xsl:for-each>
+					</xsl:for-each>
 				</ul>
 			</body>
 		</html>
