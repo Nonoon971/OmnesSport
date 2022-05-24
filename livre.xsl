@@ -10,6 +10,15 @@
 				<ul>
 					<xsl:for-each select="bibliotheque/livres">
 					<h5><xsl:value-of select="livre/titre" /></h5>
+					<table border="1" width="800px" style="background-color:#FFFFCC">
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="2"></td>
+						</tr>
+					</table>
 					</xsl:for-each>
 				</ul>
 			</body>
