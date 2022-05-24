@@ -16,6 +16,12 @@
 		{
 			background-color: lightgrey;
 		}
+		#test:hover ul li
+		{
+			display: block;
+			left: 190px;	
+			bottom: 28px;		
+		}
 		#section h2
 		{
 			font-size: 40px;
@@ -81,7 +87,7 @@
 			<!-- Faire un carrousel -->
 
 			<div id="contenu">
-				<img src="image1Accueil.jpg" alt="image medecin" height="350" width="450">
+				<img src="image1Accueil.jpg" alt="image medecin" height="320" width="420">
 			</div>
 
 			<div id="text">
