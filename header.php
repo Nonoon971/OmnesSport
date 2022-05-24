@@ -16,7 +16,7 @@
 							<li><a href="collectif.php">Cours Collectifs</a></li>
 						</ul>
 					</li>
-					<li id="test"><a href="#">Les Sports de compétition</a>
+					<li id="test"><a href="compet.php">Les Sports de compétition</a>
 						<ul>
 							<li><a href="basket.php">Basketball</a></li>
 							<li><a href="football.php">Football</a></li>
