@@ -10,6 +10,7 @@
         <permis>Permis B</permis>
         <mail>leo@monmail.fr</mail>
         <web>http://leo.monsiteperso.fr</web>
+        <photo scr="coach.jpg" />
     </entete>
     <situationActuelle>Étudiant en première année de philosophie à l'université
         Upsilon</situationActuelle>

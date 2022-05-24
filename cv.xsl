@@ -4,69 +4,126 @@
 		<html>
 			<head>
 				<title>Mon CV</title>
+				<style>
+					.image {
+					float: right;
+					margin: 15px 15px 15px 0;
+					}
+				</style>
 			</head>
 			<body>
-				<h1>Curiculum Vitae</h1>
-				<ul>
-					<xsl:for-each select="cv">
-						<p><strong><xsl:value-of select="entete/prenom "/><xsl:text>&#x09;</xsl:text><xsl:value-of select="entete/nom" /></strong><br/>
-						<xsl:value-of select="entete/ddn" />, <xsl:value-of select="entete/nationalite" /><br/>
-						<xsl:value-of select="entete/situationMaritale" />, <xsl:value-of select="entete/permis" /><br/>
-						<xsl:value-of select="entete/mail" /><br/>
-						<xsl:value-of select="entete/web" /></p>	
-						<table border ="1" width="600px">
-							<tr>
-								<td><strong>Situation acutelle</strong></td>
-							</tr>
-						</table>
-						<xsl:value-of select="situationActuelle"/><br/><br/>
-						<table border="1" width="600px">
-							<tr>
-								<td><strong>Diplômes</strong></td>
-							</tr>
-						</table>
-						<xsl:for-each select="diplomes/diplome">
+				<h1 align="center">Curiculum Vitae</h1>
+				<table border="2" align="center" width="650px">
+					<tr>
+						<td>
+							<img src="{cv/entete/photo/@scr}" height="80" width="120" class="image"/>
+							<strong><xsl:value-of select="cv/entete/prenom "/><xsl:text>&#x09;</xsl:text><xsl:value-of select="cv/entete/nom" /></strong><br/>
+							<xsl:value-of select="cv/entete/ddn" />, <xsl:value-of select="cv/entete/nationalite" /><br/>
+							<xsl:value-of select="cv/entete/situationMaritale" />, <xsl:value-of select="cv/entete/permis" /><br/>
+							<xsl:value-of select="cv/entete/mail" /><br/>
+							<xsl:value-of select="cv/entete/web" /><br/>
+								
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border ="1" width="575px" align="center" STYLE="background-color:#CCCCCC">
+								<tr>
+									<td><strong>Situation acutelle</strong></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<xsl:value-of select="cv/situationActuelle"/><br/><br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="1" width="575px" align="center" STYLE="background-color:#CCCCCC">
+								<tr>
+									<td><strong>Diplômes</strong></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<xsl:for-each select="cv/diplomes/diplome">
 							<strong><xsl:value-of select="annee"/><xsl:text>&#x9;</xsl:text><xsl:value-of select="intitule"/><br/></strong>
-    						</xsl:for-each>
-    					<table border="1" width="600px">
+    					</xsl:for-each>
+    					<br/>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<table border="1" width="575px" align="center" STYLE="background-color:#CCCCCC">
     						<tr>
     							<td><strong>Stages</strong></td>
     						</tr>
     					</table>
-    					<xsl:for-each select="stages/stage">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<xsl:for-each select="cv/stages/stage">
     						<strong><xsl:value-of select="date"/><xsl:text>&#x9;</xsl:text><xsl:value-of select="annee"/><xsl:text>&#x9;</xsl:text><xsl:value-of select="titre"/></strong><br/>
     						<xsl:value-of select="description"/><br/>
     					</xsl:for-each>
     					<br/>
-    					<table border="1" width="600px">
+    				</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<table border="1" width="575px" align="center" STYLE="background-color:#CCCCCC">
     						<tr>
-    							<td>Compétences</td>
+    							<td><strong>Compétences</strong></td>
     						</tr>
     					</table>
-    					<xsl:for-each select="competences/competence">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<xsl:for-each select="cv/competences/competence">
     						<strong><xsl:value-of select="titre"/><xsl:text>&#x9;:&#x9;</xsl:text></strong><xsl:value-of select="description"/><br/>
     					</xsl:for-each>
     					<br/>
-    					<table border="1" width="600px">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<table border="1" width="575px" align="center" STYLE="background-color:#CCCCCC">
     						<tr>
-    							<td>Langues</td>
+    							<td><strong>Langues</strong></td>
     						</tr>
     					</table>
-    					<xsl:for-each select="langues/langue">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<xsl:for-each select="cv/langues/langue">
     						<strong><xsl:value-of select="intitule"/></strong><xsl:text>&#x9;</xsl:text><xsl:value-of select="niveau"/><br/>
     					</xsl:for-each>
-    					<table border="1" width="600px">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<table border="1" width="575px" align="center" STYLE="background-color:#CCCCCC">
     						<tr>
-    							<td>Loisirs</td>
+    							<td><strong>Loisirs</strong></td>
     						</tr>
     					</table>
-    					<xsl:for-each select="loisirs/loisir">
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    					<xsl:for-each select="cv/loisirs/loisir">
     						<xsl:value-of select="."/><xsl:text>, </xsl:text>
     					</xsl:for-each>
-
-					</xsl:for-each>	
-				</ul>
-
+    					</td>
+    				</tr>
+			</table>
 
 			</body>
 		</html>
