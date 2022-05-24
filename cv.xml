@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cv.xsl"?>
+<cv id="01">
+    <entete>
+        <nom>Scotto</nom>
+        <prenom>Léo</prenom>
+        <ddn>18/07/1985</ddn>
+        <nationalite>Française</nationalite>
+        <situationMaritale>Célibataire</situationMaritale>
+        <permis>Permis B</permis>
+        <mail>leo@monmail.fr</mail>
+        <web>http://leo.monsiteperso.fr</web>
+    </entete>
+    <situationActuelle>Étudiant en première année de philosophie à l'université
+        Upsilon</situationActuelle>
+    <diplomes>
+        <diplome>
+            <annee>2006</annee>
+            <intitule>Baccalauréat littéraire</intitule>
+        </diplome>
+        <diplome>
+            <annee>2003</annee>
+            <intitule>Brevet des collèges</intitule>
+        </diplome>
+    </diplomes>
+    <stages>
+        <stage>
+            <date>été</date>
+            <annee>2005</annee>
+            <titre>Relecteur chez Eyrolles</titre>
+            <description>Révision d'ouvrages d'informatique et utilisation de la suite
+                OpenOffice.org et du logiciel de gestion de versions Subversion.</description>
+        </stage>
+        <stage>
+            <date>été</date>
+            <annee>2004</annee>
+            <titre>Stagiaire à l'UTC</titre>
+            <description>Structuration documentaire, utilisation de Scenari.</description>
+        </stage>
+    </stages>
+    <competences>
+        <competence>
+            <titre>Très bonne pratique du français écrit</titre>
+        </competence>
+        <competence>
+            <titre>Outils bureautiques</titre>
+            <description>Suite OpenOffice.org, Adobe Photoshop et The Gimp, Adobe Illustrator et
+                Inkscape</description>
+        </competence>
+    </competences>
+    <langues>
+        <langue>
+            <intitule>Anglais</intitule>
+            <niveau>Bilingue</niveau>
+        </langue>
+        <langue>
+            <intitule>Chinois</intitule>
+            <niveau>Rudiments</niveau>
+        </langue>
+    </langues>
+    <loisirs>
+        <loisir>Surf</loisir>
+        <loisir>Cinéma</loisir>
+        <loisir>Roller</loisir>
+        <loisir>Lecture</loisir>
+    </loisirs>
+</cv>
