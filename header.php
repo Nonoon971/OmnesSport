@@ -4,10 +4,10 @@
 	<div id="nav">
 
 		<ul>
-			<li><a href="#">Accueil</a></li>
+			<li><a href="Accueil.php">Accueil</a></li>
 			<li><a href="#">Tout Parcourir</a>
 				<ul>
-					<li id="test"><a href="#">Activités sportives</a>
+					<li id="test"><a href="activite.php">Activités sportives</a>
 						<ul>
 							<li><a href="musculation.php">Musculation</a></li>
 							<li><a href="fitness.php">Fitness</a></li>
