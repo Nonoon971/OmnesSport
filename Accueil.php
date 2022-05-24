@@ -142,7 +142,7 @@
 
 
 		<footer>
-			Droit d'auteur | Copyright &copy;2022 Omnes Sport
+			Droit d'auteur | Copyright &copy;2022 Omnes Sport &bull; omnes.sport@omneseducation.org &bull; <address><a style="text-decoration: none;" href="https://goo.gl/maps/JV5cmXaqijZvfycG7">37 Quai de Grenelle, Paris 75015</a></address>
 		</footer>
 
 
