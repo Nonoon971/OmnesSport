@@ -1,8 +1,6 @@
 <header>
 	<h1>Omnes Sport</h1>
 
-
-
 	<div id="nav">
 
 		<ul>
