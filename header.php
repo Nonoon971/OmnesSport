@@ -7,9 +7,9 @@
 
 		<ul>
 			<li><a href="#">Accueil</a></li>
-			<li>Tout Parcourir
+			<li><a href="#">Tout Parcourir</a>
 				<ul>
-					<li id="test">Activités sportives
+					<li id="test"><a href="#">Activités sportives</a>
 						<ul>
 							<li><a href="musculation.php">Musculation</a></li>
 							<li><a href="fitness.php">Fitness</a></li>
@@ -18,7 +18,7 @@
 							<li><a href="collectif.php">Cours Collectifs</a></li>
 						</ul>
 					</li>
-					<li id="test">Les Sports de compétition
+					<li id="test"><a href="#">Les Sports de compétition</a>
 						<ul>
 							<li><a href="basket.php">Basketball</a></li>
 							<li><a href="football.php">Football</a></li>

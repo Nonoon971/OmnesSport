@@ -2,6 +2,8 @@ body
 {
 	/*Pour éviter des espaces avec les div*/
 	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 h1
 {
@@ -12,11 +14,8 @@ h1
 	padding: 20px;
 	margin: 0;
 }
-#nav
-{
-	position: fixed;
-}
-#nav ul
+
+#nav, #nav ul
 {
 	text-align: center;
 	margin: 0;
@@ -25,12 +24,12 @@ h1
 }
 #nav li
 {
-	float: left;
 	position: relative;
-	color: white;
+	display: inline-block;
 	background-color: blue;
+	color: white;
 	font-size: 20px;
-	width: 253.2px;
+	width: 200px;
 	padding: 10px;
 	text-align: center;
 }
@@ -68,7 +67,7 @@ h1
 #test:hover ul li
 {
 	display: block;
-	left: 263px;	
+	left: 200px;	
 	bottom: 25px;		
 }
 #nav li:hover ul li
