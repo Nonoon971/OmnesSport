@@ -10,43 +10,37 @@
         <permis>Permis B</permis>
         <mail>leo@monmail.fr</mail>
         <web>http://leo.monsiteperso.fr</web>
-        <photo scr="coach.jpg" />
+        <photo scr="coach.jpg"/>
     </entete>
-    <situationActuelle>Étudiant en première année de philosophie à l'université
-        Upsilon</situationActuelle>
+    <situationActuelle>Coach sportif au Basic Fit d'Argenteuil</situationActuelle>
     <diplomes>
         <diplome>
-            <annee>2006</annee>
-            <intitule>Baccalauréat littéraire</intitule>
+            <annee>2000</annee>
+            <intitule>Baccalauréat Economique et Sociale</intitule>
         </diplome>
         <diplome>
-            <annee>2003</annee>
-            <intitule>Brevet des collèges</intitule>
+            <annee>2005</annee>
+            <intitule>Master 2 en staps</intitule>
         </diplome>
     </diplomes>
     <stages>
         <stage>
-            <date>été</date>
+            <date></date>
             <annee>2005</annee>
-            <titre>Relecteur chez Eyrolles</titre>
-            <description>Révision d'ouvrages d'informatique et utilisation de la suite
-                OpenOffice.org et du logiciel de gestion de versions Subversion.</description>
+            <titre>Assistant professeur de sport</titre>
+            <description>J'étais l'assistant d'un professeur de sport dans mon établissement en staps. Je préparais les échauffements, les différents exercices pour travailler certains muscles en particulier.</description>
         </stage>
         <stage>
-            <date>été</date>
+            <date></date>
             <annee>2004</annee>
-            <titre>Stagiaire à l'UTC</titre>
-            <description>Structuration documentaire, utilisation de Scenari.</description>
+            <titre>Stagiaire salle de sport</titre>
+            <description>Je travaillais en tant qu'assistant coach de sport personnel dans une salle de sport à Argenteuil. J'aidais tout type de personne en fonction de leur demande, du type d'exercice voulu et le type de forfait.</description>
         </stage>
     </stages>
     <competences>
         <competence>
-            <titre>Très bonne pratique du français écrit</titre>
-        </competence>
-        <competence>
-            <titre>Outils bureautiques</titre>
-            <description>Suite OpenOffice.org, Adobe Photoshop et The Gimp, Adobe Illustrator et
-                Inkscape</description>
+            <titre>Pratique de plusieurs sport en compétition</titre>
+            <description>Judo, Tennis, Badminton et football</description>
         </competence>
     </competences>
     <langues>
@@ -55,8 +49,8 @@
             <niveau>Bilingue</niveau>
         </langue>
         <langue>
-            <intitule>Chinois</intitule>
-            <niveau>Rudiments</niveau>
+            <intitule>Espagnol</intitule>
+            <niveau>Bilingue</niveau>
         </langue>
     </langues>
     <loisirs>
