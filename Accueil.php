@@ -15,10 +15,6 @@
 	</script>
 	<link rel="stylesheet" type="text/css" href="test.css">
 	<style type="text/css">
-		body
-		{
-			
-		}
 		#test:hover ul li
 		{
 			display: block;
