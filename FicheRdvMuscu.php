@@ -7,12 +7,13 @@
 	<title>OmnesSport</title>
 </head>
 <body>
-	<?php include_once('header.php')?>
+	<?php require('header.php')?>
 
 	<div class ="section">
-		<p> Ca c'est Mon CV !!!!!</p> <?php  $coachName='Personne' ?>
+		<p> Ca c'est Mon CV !!!!!</p> 
 
-	<?php include_once('tableauRDV.php')?>
+		<?php  $coachName='Personne' ?>
+		<?php require('tableauRDV.php')?>
 
 	</div>
 </body>

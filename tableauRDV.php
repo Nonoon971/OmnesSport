@@ -41,16 +41,18 @@
 			for($i=0;$i<count($HorraireALL);$i++){
 				echo "<tr> ";
 
+				echo "<style>#reserve{background-color : blue ;
+									  }</style>";
 				for($y=0;$y<count($DayALL);$y++){
 					for($z=0;$z<count($tabHorraire);$z++){
 						if(($tabHorraire[$z]==$HorraireALL[$i])&&($tabJour[$z]==$DayALL[$y])){
-							echo " <div id='reserve'> 
-										<th> R". $HorraireALL[$i]." R</th>
-								   </div> ";
+							echo '  
+										<td id="reserve"> '. $HorraireALL[$i].' </td>
+								    ';
 						}
 						else{
 
-							echo "<th>". $HorraireALL[$i] ." </th>";
+							echo "<td>". $HorraireALL[$i] ." </td>";
 
 						}
 					}
