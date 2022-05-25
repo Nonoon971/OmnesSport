@@ -87,7 +87,7 @@
 			<!-- Faire un carrousel -->
 
 			<div id="contenu">
-				<img src="image1Accueil.jpg" alt="image medecin" height="320" width="420">
+				<img src="image1Accueil.png" alt="image medecin" height="320" width="420">
 			</div>
 
 			<div id="text">
