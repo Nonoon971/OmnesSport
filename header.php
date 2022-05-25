@@ -39,7 +39,7 @@
 							<div class="col-md-12 col-lg-5 align-self-center mb-3">
 								<form action="recherche.php" method="post" class="form-inline">
 									<div class="input-group">
-										<input id="recherche" type="text" name="search" class="form-control" placeholder="Spécialité ou Nom ou Etablissement">
+										<input id="recherche" type="search" name="q" class="form-control" placeholder="Spécialité ou Nom ou Etablissement">
 										<div class="input-group-btn">
 											<button id="searchbtn" type="submit" class="btn btn-info"><span class="fa fa-search"></span>
 												Chercher
