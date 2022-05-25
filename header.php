@@ -29,7 +29,30 @@
 					<li><a href="salle.php">Salle de sport Omnes</a></li>
 				</ul>
 			</li>
-			<li><a href="recherche.php">Recherche</a></li>
+			<li>
+				<a href="#" data-popup-ref="monPopup">Recherche</a>
+
+				<div class="popup" data-popup-id="monPopup">
+					<div class="popup-content">
+
+						<div class="popup-body">
+							<div class="col-md-12 col-lg-5 align-self-center mb-3">
+								<form action="recherche.php" method="post" class="form-inline">
+									<div class="input-group">
+										<input id="recherche" type="text" name="search" class="form-control" placeholder="Spécialité ou Nom ou Etablissement">
+										<div class="input-group-btn">
+											<button id="searchbtn" type="submit" class="btn btn-info"><span class="fa fa-search"></span>
+												Chercher
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div> 
+				</div>
+
+			</li>
 			<li><a href="rdv.php">Rendez-vous</a></li>
 			<li><a href="compte.php">Votre Compte</a></li>
 
