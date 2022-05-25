@@ -4,9 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Activités sportives</title>
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="./popup.js" defer>	
+	</script>
 	<link rel="stylesheet" type="text/css" href="test.css">
 
 	<style type="text/css">
+		#test:hover ul li
+		{
+			display: block;
+			left: 190px;	
+			bottom: 28px;		
+		}
 		#section
 		{
 			float: right;
@@ -30,7 +43,12 @@
 			font-weight: bold;
 
 		}
-		a
+		#rightcolumn a
+		{
+			text-decoration: none;
+			color: black;
+		}
+		#section a
 		{
 			text-decoration: none;
 			color: black;
@@ -70,7 +88,7 @@
 			Voici toutes les activités que vous pouvez pratiquer au sein de notre groupe Omnes sport avec nos coachs qui se feront un plaisir de vous accompagner.<br>
 			Choisissez le sport de votre choix selon vos goûts et vos capacités.
 		</p>
-			
+
 		<hr>
 		<div id="muscu">
 			<h2><a href="musculation.php">Musculation</a></h2>
@@ -80,6 +98,9 @@
 			<img src="abdo.jpeg" alt="abdo">
 			<img src="abdo2.jpg">
 			<img src="abdo3.jpg">
+			<p>
+				<a style="color: blue;" href="musculation.php">Découvrez notre coach et ses disponibilités ici</a>
+			</p>
 			<br><br>
 
 		</div>
