@@ -68,7 +68,7 @@
     				<tr>
     					<td>
     					<xsl:for-each select="cv/stages/stage">
-    						<strong><xsl:value-of select="date"/><xsl:text>&#x9;</xsl:text><xsl:value-of select="annee"/><xsl:text>&#x9;</xsl:text><xsl:value-of select="titre"/></strong><br/>
+    						<strong><xsl:value-of select="annee"/><xsl:text>&#x9;</xsl:text><xsl:value-of select="titre"/></strong><br/>
     						<xsl:value-of select="description"/><br/>
     					</xsl:for-each>
     					<br/>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+  <entete>
+    <nom>Scotto</nom>
+    <prenom>Léo</prenom>
+    <ddn>18/07/1985</ddn>
+    <nationalite>Française</nationalite>
+    <situationMaritale>Célibataire</situationMaritale>
+    <permis>Permis B</permis>
+    <mail>leo@monmail.fr</mail>
+  </entete>
+  <situationActuelle>Coach sportif au Basic Fit d'Argenteuil</situationActuelle>
+  <diplomes>
+    <diplome>
+      <annee>2000</annee>
+      <intitule>Baccalauréat Economique et Sociale</intitule>
+    </diplome>
+  </diplomes>
+  <stages>
+    <stage>
+      <annee>2004</annee>
+      <titre>Stagiaire salle de sport</titre>
+      <description>Je travaillais en tant qu'assistant coach de sport personnel dans une salle de sport à Argenteuil. J'aidais tout type de personne en fonction de leur demande, du type d'exercice voulu et le type de forfait.</description>
+    </stage>
+  </stages>
+  <competences>
+    <competence>
+      <titre>Stagiaire salle de sport</titre>
+      <description>Judo, Tennis, Badminton et football</description>
+    </competence>
+  </competences>
+  <langues>
+    <langue>
+      <intitule>Anglais</intitule>
+      <niveau>Bilingue</niveau>
+    </langue>
+  </langues>
+  <loisirs>
+    <loisir>Surf</loisir>
+  </loisirs>
+</cv>
