@@ -124,6 +124,7 @@ if ($db_found)
 	</div>';
 
 }
+include('footer.php');
 
 
 
