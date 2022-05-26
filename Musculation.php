@@ -12,7 +12,7 @@
 	
 	<div id="section">
 
-		 <h1> Musculation</h1>
+		 <h2> Musculation</h2>
 
 		 <p>Notre salle OmnesSport met a disposition une salle de musculattion pour tous les abonnés <br><br> 
 		 	Vous y trouverez toutes les machines dont vous aurrez besoin pour dévelloper votre musculature. <br><br>
