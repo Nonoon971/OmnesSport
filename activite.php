@@ -181,7 +181,7 @@
 
 					<hr>
 					<div id="collectif">
-						<h2><a href="collectif.php">Cours Colelctifs</a></h2>
+						<h2><a href="collectif.php">Cours Collectifs</a></h2>
 						<p>
 							Vous préférez pratiquer en groupe, en famille, entre amis ? Ce cours est fait pour vous ! Zumba, Yoga, step etc... De nombreuses séances et d'activités collectives sont programmées par notre coach pour vous motiver.<br>
 
