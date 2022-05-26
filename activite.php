@@ -100,9 +100,9 @@
 			<img src="abdo2.jpg">
 			<img src="abdo3.jpg">
 			<p>
-				<a style="color: blue;" href="musculation.php">Découvrez notre coach et ses disponibilités ici</a>
+				<br><a style="color: blue;" href="musculation.php">Découvrez notre coach et ses disponibilités ici</a>
 			</p>
-			<br><br>
+			<br>
 
 		</div>
 		<hr>
