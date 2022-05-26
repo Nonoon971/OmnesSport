@@ -13,6 +13,7 @@
 	<script src="./popup.js" defer>	
 	</script>
 	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" type="text/css" href="csspopup.css">
 
 	<style type="text/css">
 		#test:hover ul li
@@ -62,6 +63,7 @@
 			margin-left: 30px;
 			margin-top: 30px;
 		}
+
 		#rightcolumn li 
 		{
 			height: 50px;
@@ -120,7 +122,7 @@
 
 					<hr>
 					<div id="muscu">
-						<h2><a href="musculation.php">Musculation</a></h2>
+						<?php include('testmuscu.php'); ?>
 						<p>
 							Afin de sculpter sa silhouette à son rythme et à son goût. Développer votre masse musculaire.
 						</p>

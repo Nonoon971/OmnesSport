@@ -134,6 +134,7 @@ header
 {
 	background-color: darkblue;
 }
+
 footer
 {
 	background-color: black;
@@ -142,5 +143,4 @@ footer
 	text-align: center;
 	padding: 10px;
 	font-size: 0.6em;
-
 }
