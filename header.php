@@ -55,7 +55,9 @@
 			</li>
 			<li><a href="rdv.php">Rendez-vous</a></li>
 			<li><a href="compte.php">Votre Compte</a></li>
-
+			<!-- 
+				<li id="login"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  tester avec session pour remplacer et tt
+			-->
 		</ul>
 
 	</div>
