@@ -1,20 +1,24 @@
 <?php
-	$xml = new DomDocument('1.0','utf-8');
+	/*$xml = new DomDocument('1.0','utf-8');
 	$xml->formatOutput=true;
 	$xml->preserveWhiteSpace=false;
 	//create element using createElement()
 	//append child to parent using appendChild()*/
-	$test = '<?xml version="1.0" encoding="UTF-8"?>';
-	$test .= '<?xml-stylesheet type="text/xsl" href="cv.xsl"?>';
-	$test .= '<items>';
-	$test .= 'contenu de la balise';
-	$test .= '</items>';
-	echo $test->$xml;
-		$xml->save("lala.xml") or die("errrrrooooorrrr");
-	/*$temp=$xml->createElement("temp");
-	$xml->appendChild($temp);
+	$proc = new XSLTProcessor;
+	$xml = new DOMDocument;
+	$xml->load('cv.xml');
+	$xsl = new DOMDocument;
+	$xsl->load('cv.xsl');
+	$proc->importStyleSheet($xsl); // attachement des règles xsl
+	if($html= $proc->transformToXML($xml)){
+		echo $html;
+	}else{
+		trigger_error('La transformation XSL à échouée.', E_USER_ERROR);
+	}
 
-	$books=$xml->createElement("books");
+
+
+	/*$books=$xml->createElement("books");
 	$xml->appendChild($books);
 	//parent->appendChild(child);
 

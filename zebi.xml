@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<temp/>
-<books>
-  <book id="1">
-    <name>java</name>
-    <price>200</price>
-  </book>
-</books>
