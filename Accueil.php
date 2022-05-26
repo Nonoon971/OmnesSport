@@ -60,16 +60,7 @@
 			clear: both;
 			overflow: hidden;
 		}
-		footer
-		{
-			background-color: black;
-			color: white;
-			clear: left;
-			text-align: center;
-			padding: 10px;
-			font-size: 0.6em;
 
-		}
 	</style>
 	<style>
 		.carousel-inner img {
