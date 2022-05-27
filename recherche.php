@@ -6,7 +6,7 @@ echo '<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3
 echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
 echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>';
 echo '<script src="./popup.js" defer></script>';
-echo '<link rel="stylesheet" type="text/css" href="test.css">';
+echo '<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">';
 
 echo '<style type="text/css">
 #test:hover ul li
