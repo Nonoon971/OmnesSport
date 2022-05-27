@@ -6,35 +6,48 @@
 	<link rel="stylesheet" type="text/css" href="test.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
-	$(document).ready(function() {
-        var ligneID;
-        var colonneID;
+	/*$(document).ready(function() {
+        
 		$('#tabRdv').find('td').click(function(){
             var cellId = $(this).attr("id");
             var HrSelect = $('#'+ cellId ).text();
             if(parseInt(cellId)%10==2){
-            	alert("Mercredi "+ HrSelect)
+            	alert("Mercredi "+ HrSelect);
             }
-            
-            
+            $.ajax({
+                    type: "POST",
+                   // action: 'reservation.php',
+                    url: 'reservation.php',
+                    data: {
+                    	HrSelect : HrSelect},
+                    success: function(data)
+                    {
+                        alert("success! "+ data);
+                    }
+
+                });
+         
 		});
 		
        
-	});
+	}); */
+/*	jQuery( document ).ajaxSuccess(function( event, xhr, settings ) {
+  window.location.href = 'reservation.php';
+      });    */
 
 	</script>
 	<title>OmnesSport</title>
 </head>
 <body>
+
 	<?php require('header.php')?>
 
 	<div id ="section">
-		<p> Ca c'est Mon CV !!!!!</p> 
 
+		<p> Ca c'est Mon CV !!!!!</p> 
+         
 		<?php  $coachName='Personne' ?>
 		<?php require('tableauRDV.php')?>
-
-
 
 	</div>
 </body>

@@ -2,8 +2,10 @@
     $database = "omnessport";
 	$db_handle = mysqli_connect('localhost', 'root', '');
     $db_found = mysqli_select_db($db_handle, $database);
-echo "<style>#reserve{background-color : blue ;
-									  }</style>";
+echo "<style>#reserve{background-color : blue ;}
+						 #tabRdv{margin: 0 auto;}
+							input{margin: 0 auto;}
+									  </style>";
   //  $coachName= isset($_POST["nom"])? $_POST["nom"] : "";
 
     if($db_found){
@@ -25,7 +27,8 @@ echo "<style>#reserve{background-color : blue ;
 				$tabJour[$i]=$data['jour'];   
 			}
 
-			echo "<table id='tabRdv' border='2'>
+			echo "<form action='reservation.php' method='post'>
+						<table id='tabRdv' border='2'>
 					<tr>
 						<th>  Lundi  </th>
 						<th>  Mardi  </th>
@@ -58,14 +61,17 @@ echo "<style>#reserve{background-color : blue ;
 						}
 						else{
 							$marque=(int)$marque+ (int)$y;
-							echo "<td id='". (string)$marque ."'>". $HorraireALL[$i] ." </td>";
+						//	echo "<td id='". (string)$marque ."'><input type='submit' name='valider' value='". $HorraireALL[$i] ."'></td>";
+							echo "<td id='". (string)$marque ."'><a href='reservation.php?Jour=".$HorraireALL[$i]."&Heure=".$DayALL[$y]."'>". $HorraireALL[$i] ."</a></td>";
 							$marque=$marque-$y;
 						}
 					}
 				}
 				echo  "</tr>";
 			}
-			echo "</table>";
+			echo "</table>
+						</form>";
 		}
     }
 ?>
+
