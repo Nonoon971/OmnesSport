@@ -241,8 +241,17 @@ $("#valideLoisir").click(function() {
                 <tr>
                     <td>Mail :</td>
                     <td><input type="email" name="mail"></td>
+                </tr>
+                <tr>
+                    <td>Situation Actuelle :</td>
+                    <td><input type="text" name="situationActuelle"></td>
+                </tr>
+                <tr>
+                	<td colspan="2" align="center"><input type="file" name="photo" accept="image/png, image/jpeg"></td>
                 </tr>       
             </table>
+
+
 
 
             <!---------------------DIPLOMES------------------------------------>

@@ -9,6 +9,8 @@
 	$SituationMaritale = isset($_POST["situationMaritale"])? $_POST["situationMaritale"] : "";
 	$Permis = isset($_POST["permis"])? $_POST["permis"] : "";
 	$Mail = isset($_POST["mail"])? $_POST["mail"] : "";
+	$SituationActuelle = isset($_POST["situationActuelle"])? $_POST["situationActuelle"] : "";
+	$Photo = isset($_POST["photo"])? $_POST["photo"] : "";
 
 	//----------------------------------RECUPERATION DES COMPTEURS------------------------------------------------------
 	$nbDiplome = isset($_POST["nbDiplome"])? $_POST["nbDiplome"] : "";
@@ -112,14 +114,21 @@
 	$entete->appendChild($permis);
 	//mail
 	$mail = $xml->createElement("mail",$Mail);
-	$entete->appendChild($mail);
-	//photo
-	/*$photo = $xml->createElement("photo","coach.png");
-	$entete->appendChild($photo);*/
-
+	$entete->appendChild($mail);	
 	//situation actuelle
-	/*$situationActuelle = $xml->createElement("situationActuelle","Coach sportif au Basic Fit d'Argenteuil");
-	$cv->appendChild($situationActuelle);*/
+	$situationActuelle = $xml->createElement("situationActuelle",$SituationActuelle);
+	$cv->appendChild($situationActuelle);
+	//photo
+	/*$photo = $xml->createElement("photo");
+	//if (isset($_FILES[$Photo]) AND $_FILES[$Photo]['error'] == 0){
+		$nomPhoto = pathinfo($Photo);
+	
+	$photoAttribute = $xml->createAttribute('scr');
+	$photoAttribute->value = $nomPhoto;
+	$photo->appendChild($photoAttribute);
+	$cv->appendChild($photo);*/
+
+
 
 	//diplomes
 	$diplomes = $xml->createElement("diplomes");
@@ -333,7 +342,6 @@ if ($AnneeS03!="" && $TitreS3!="") {
 
 
 	//sauvegarde des informations en fichier XML----------------------
-	//$fichier=$nom.$prenom.".xml";
 	$fichier =  strtolower($PrenomBis .$NomBis.".xml");
 	$xml->save($fichier) or die("Error, Unable to create XML file");
 
