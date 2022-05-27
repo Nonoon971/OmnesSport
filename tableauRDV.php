@@ -24,7 +24,8 @@ echo "<style>#reserve{background-color : blue ;}
 			$i=0;
 			while ($data = mysqli_fetch_assoc($result)){
 				$tabHorraire[$i]=$data['Heure'];
-				$tabJour[$i]=$data['jour'];   
+				$tabJour[$i]=$data['jour'];  
+				$i=$i+1;
 			}
 
 			echo "<form action='reservation.php' method='post'>
@@ -43,6 +44,7 @@ echo "<style>#reserve{background-color : blue ;}
 			$y=0;
 			$z=0;
 			$marque=0;
+			$test=0;
 			for($i=0;$i<count($HorraireALL);$i++){
 				echo "<tr id='". $i ."'>";
         if($i==0){$marque=0;}
@@ -55,16 +57,23 @@ echo "<style>#reserve{background-color : blue ;}
 				for($y=0;$y<count($DayALL);$y++){
 					for($z=0;$z<count($tabHorraire);$z++){
 						if(($tabHorraire[$z]==$HorraireALL[$i])&&($tabJour[$z]==$DayALL[$y])){
-							echo '  
-										<td id="reserve"> '. $HorraireALL[$i].' </td>
-								    ';
+							$test=1;
 						}
 						else{
-							$marque=(int)$marque+ (int)$y;
-						//	echo "<td id='". (string)$marque ."'><input type='submit' name='valider' value='". $HorraireALL[$i] ."'></td>";
-							echo "<td id='". (string)$marque ."'><a href='reservation.php?Jour=".$HorraireALL[$i]."&Heure=".$DayALL[$y]."'>". $HorraireALL[$i] ."</a></td>";
-							$marque=$marque-$y;
+							
 						}
+					}
+					if($test==1){
+						echo '  
+										<td id="reserve"> '. $HorraireALL[$i].' </td>
+								    ';
+						$test=0;
+					}
+					else{
+								$marque=(int)$marque+ (int)$y;
+						//	echo "<td id='". (string)$marque ."'><input type='submit' name='valider' value='". $HorraireALL[$i] ."'></td>";
+							echo "<td id='". (string)$marque ."'><a href='reservation.php?Jour=".$HorraireALL[$i]."&Heure=".$DayALL[$y]."&Name=".$coachName."'>". $HorraireALL[$i] ."</a></td>";
+							$marque=$marque-$y;
 					}
 				}
 				echo  "</tr>";

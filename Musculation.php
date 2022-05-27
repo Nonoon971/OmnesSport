@@ -23,6 +23,12 @@
 
 		<div id="description">
 			<p> Salut moi c'est M.Personne, <br> je suis un coach sportif spécialisé dans la musculation donc si tu a envie d'avoir un corps d'Appolon, n'hésite pas cliqer sur ce  <a href="FicheRdvMuscu.php?Nom=Personne">lien</a> pour voir plus d'information me concernant !</p>
+
+			<p> Ca c'est Mon CV !!!!!</p> 
+         
+			<?php  $coachName='Personne' ?>
+			<?php require('tableauRDV.php')?>
+			
 		</div>
 	</div>
 
