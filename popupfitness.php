@@ -1,7 +1,7 @@
-<h2><a href="#demo">Musculation</a></h2>
+<h2><a href="#demo2">Fitness</a></h2>
 
 
-<div id="demo" class="modal">
+<div id="demo2" class="modal">
 	<div class="modal_content">
 		<?php  
 
@@ -13,7 +13,7 @@
 
 		if ($db_found)
 		{
-			$sql = "SELECT Nom, Prenom, Tel, Profession, Email,CV FROM utilisateur WHERE Type = 'coach' AND Profession ='coach de musculation'"; //Le cv se peut qu'il doit être récupéré quand on clique sur le bouton
+			$sql = "SELECT Nom, Prenom, Tel, Profession, Email,CV FROM utilisateur WHERE Type = 'coach' AND Profession ='coach de fitness'"; //Le cv se peut qu'il doit être récupéré quand on clique sur le bouton
 
 			$result = mysqli_query($db_handle, $sql);
 

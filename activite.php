@@ -122,7 +122,7 @@
 
 					<hr>
 					<div id="muscu">
-						<?php include('testmuscu.php'); ?>
+						<?php include('popupmuscu.php'); ?>
 						<p>
 							Afin de sculpter sa silhouette à son rythme et à son goût. Développer votre masse musculaire.
 						</p>
@@ -136,7 +136,7 @@
 
 					<hr>
 					<div id="fitness">
-						<h2><a href="fitness.php">Fitness</a></h2>
+						<?php include('popupfitness.php'); ?>
 						<p>
 							Le fitness est différent de la musculation. Elle regroupe plusieurs activité, le cardio, les étirements, le step etc...<br>
 							Le but est d'à la fois perdre du poids en travaillant tout le corps, son endurance, son cardio, en se musclant etc...
