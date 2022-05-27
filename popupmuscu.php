@@ -1,4 +1,4 @@
-<h2><a href="#demo">Musculation</a></h2>
+<br><a style="color: blue;" href="#demo">Découvrez notre coach de musculation et ses disponibilités ici</a>
 
 
 <div id="demo" class="modal">

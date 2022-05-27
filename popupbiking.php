@@ -1,7 +1,7 @@
-<br><a style="color: blue;" href="#demo2">Découvrez notre coach de fitness et ses disponibilités ici</a>
+<br><a style="color: blue;" href="#demo3">Découvrez notre coach de biking et ses disponibilités ici</a>
 
 
-<div id="demo2" class="modal">
+<div id="demo3" class="modal">
 	<div class="modal_content">
 		<?php  
 
@@ -13,7 +13,7 @@
 
 		if ($db_found)
 		{
-			$sql = "SELECT Nom, Prenom, Tel, Profession, Email,CV FROM utilisateur WHERE Type = 'coach' AND Profession ='coach de fitness'"; //Le cv se peut qu'il doit être récupéré quand on clique sur le bouton
+			$sql = "SELECT Nom, Prenom, Tel, Profession, Email,CV FROM utilisateur WHERE Type = 'coach' AND Profession ='coach de biking'"; //Le cv se peut qu'il doit être récupéré quand on clique sur le bouton
 
 			$result = mysqli_query($db_handle, $sql);
 
@@ -61,9 +61,9 @@
 		<a href="#" class="modal_close" style="font-size: 30px; background-color: yellow; border: 2px solid black;">&times;</a>
 		<div class="spacer"></div>
 		<div id="boutton">
-			<br><br><button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'fitness.php';">Prendre RDV</button>
-			<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'fitness.php';" style="width: 150px;">Echanger avec <br>le coach</button>
-			<button type="button" class="btn btn-warning btn-lg" onclick="window.location.href = 'fitness.php';">Voir son CV</button>
+			<br><br><button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'biking.php';">Prendre RDV</button>
+			<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'biking.php';" style="width: 150px;">Echanger avec <br>le coach</button>
+			<button type="button" class="btn btn-warning btn-lg" onclick="window.location.href = 'biking.php';">Voir son CV</button>
 
 		</div>
 	</div>

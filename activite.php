@@ -122,7 +122,7 @@
 
 					<hr>
 					<div id="muscu">
-						<?php include('popupmuscu.php'); ?>
+						<h2>Musculation</h2>
 						<p>
 							Afin de sculpter sa silhouette à son rythme et à son goût. Développer votre masse musculaire.
 						</p>
@@ -130,28 +130,28 @@
 						<img src="abdo2.jpg">
 						<img src="abdo3.jpg">
 						<p>
-							<br><a style="color: blue;" href="musculation.php">Découvrez notre coach de musculation et ses disponibilités ici</a>
+							<?php include('popupmuscu.php'); ?>
 						</p>
 					</div>
 
 					<hr>
 					<div id="fitness">
-						<?php include('popupfitness.php'); ?>
+						<h2>Fitness</h2>
 						<p>
-							Le fitness est différent de la musculation. Elle regroupe plusieurs activité, le cardio, les étirements, le step etc...<br>
+							Le fitness est différent de la musculation. Elle regroupe plusieurs activités, le cardio, les étirements, le step etc...<br>
 							Le but est d'à la fois perdre du poids en travaillant tout le corps, son endurance, son cardio, en se musclant etc...
 						</p>
 						<img src="fitness.jpg">
 						<img src="fitness1.jpg">
 						<img src="fitness2.jpg">
 						<p>
-							<br><a style="color: blue;" href="fitness.php">Découvrez notre coach de fitness et ses disponibilités ici</a>
+							<?php include('popupfitness.php'); ?>
 						</p>
 
 					</div>
 					<hr>
 					<div id="biking">
-						<h2><a href="biking.php">Biking</a></h2>
+						<h2>Biking</h2>
 						<p>
 							Faisons du vélo en salle ! Un peu comme du cyclisme mais sur un vélo fixe, venez travailler votre cardio et votre physique avec nos vélo de biking. Vous éprouverez les mêmes sensations qu'un vélo de route<br>
 
@@ -160,14 +160,14 @@
 						<img src="biking1.jpg">
 						<img src="biking3.jpg">
 						<p>
-							<br><a style="color: blue;" href="biking.php">Découvrez notre coach de biking et ses disponibilités ici</a>
+							<?php include('popupbiking.php'); ?>
 						</p>
 
 					</div>
 
 					<hr>
 					<div id="cardio">
-						<h2><a href="cardio.php">Cardio-Training</a></h2>
+						<h2>Cardio-Training</h2>
 						<p>
 							Le cardio-training, comme son nom l'indique permet de travailler le cardio. En augmentant progressivement l'intensité, on essaye de vous faire contrôler votre fréquence cardiaque. Cela vous permettra d'améliorer la performance de votre coeur.<br>
 
@@ -176,14 +176,14 @@
 						<img src="cardio1.jpg">
 						<img src="cardio2.jpg">
 						<p>
-							<br><a style="color: blue;" href="biking.php">Découvrez notre coach de cardio-training et ses disponibilités ici</a>
+							<?php include('popupcardio.php'); ?>
 						</p>
 
 					</div>
 
 					<hr>
 					<div id="collectif">
-						<h2><a href="collectif.php">Cours Collectifs</a></h2>
+						<h2>Cours Collectifs</h2>
 						<p>
 							Vous préférez pratiquer en groupe, en famille, entre amis ? Ce cours est fait pour vous ! Zumba, Yoga, step etc... De nombreuses séances et d'activités collectives sont programmées par notre coach pour vous motiver.<br>
 
@@ -192,7 +192,7 @@
 						<img src="collectif1.png">
 						<img src="collectif2.jpg">
 						<p>
-							<br><a style="color: blue;" href="biking.php">Découvrez notre coach en charge des cours collectifs et ses disponibilités ici</a>
+							<?php include('popupcollectif.php'); ?>
 						</p>
 
 					</div>
