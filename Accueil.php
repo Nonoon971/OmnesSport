@@ -14,7 +14,7 @@
 
 	<script src="./popup.js" defer>	
 	</script>
-	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">
 	<style type="text/css">
 		#test:hover ul li
 		{
