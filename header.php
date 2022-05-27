@@ -1,5 +1,5 @@
 <header>
-	<h1><b>Omnes Sport</b></h1>
+	<h1 style="text-shadow: 1px 1px 3px white;"><b>Omnes Sport</b></h1>
 
 	<div id="nav">
 
