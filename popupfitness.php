@@ -61,9 +61,9 @@
 		<a href="#" class="modal_close" style="font-size: 30px; background-color: yellow; border: 2px solid black;">&times;</a>
 		<div class="spacer"></div>
 		<div id="boutton">
-			<br><br><button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'musculation.php';">Prendre RDV</button>
-			<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'musculation.php';" style="width: 150px;">Echanger avec <br>le coach</button>
-			<button type="button" class="btn btn-warning btn-lg" onclick="window.location.href = 'musculation.php';">Voir son CV</button>
+			<br><br><button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'fitness.php';">Prendre RDV</button>
+			<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'fitness.php';" style="width: 150px;">Echanger avec <br>le coach</button>
+			<button type="button" class="btn btn-warning btn-lg" onclick="window.location.href = 'fitness.php';">Voir son CV</button>
 
 		</div>
 	</div>
