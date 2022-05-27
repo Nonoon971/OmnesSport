@@ -17,7 +17,7 @@
 		 <p>Notre salle OmnesSport met a disposition une salle de musculattion pour tous les abonnés <br><br> 
 		 	Vous y trouverez toutes les machines dont vous aurrez besoin pour dévelloper votre musculature. <br><br>
 		 Cette salle s'étant sur plus de 400m <sup>2</sup> et surplombe le parc végétal, vous permettant de faire du sport <strong>comme si vous vous trouviez en pleine nature !</strong></p> 
-		
+	    
 		<p> Le coach de musculation est M.personne </p>
 		   <img src="coach_muscu.jpg">
 
@@ -26,7 +26,8 @@
 
 			<p> Ca c'est Mon CV !!!!!</p> 
          
-			<?php  $coachName='Personne' ?>
+			<?php  $coachName='Personne' ; $Sport='muscu'?>
+
 			<?php require('tableauRDV.php')?>
 			
 		</div>

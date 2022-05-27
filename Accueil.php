@@ -1,4 +1,15 @@
-<?php session_start() ?>
+<?php session_start() ;
+	$_SESSION['conn'];
+	if($_SESSION['conn']==null||$_SESSION['conn']==0){
+		$_SESSION['conn']=0;
+		$_SESSION['Nom']='';
+	}
+	else{
+		$_SESSION['conn']=1;
+	}
+
+ 
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
