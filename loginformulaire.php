@@ -4,15 +4,15 @@ include'login.php'
 <?php if(!isset($_SESSION['nom'])):  ?>
 	<div class="login">
 		<div class="container">
-			<h2>Se connecter à un compte deja existant</h2>
+			<h2><b>Se connecter à un compte déjà existant</b></h2><br>
 			<form action="" method="post">
 				<table border="1">
 					<div class="form-group">
-						<label for="email">Email:</label>
+						<label for="email"><b>Email:</b></label>
 						<input type="email" class="form-control" name="eml" placeholder="Entrer votre email">
 					</div>
 					<div class="form-group">
-						<label for="pwd">Password:</label>
+						<label for="pwd"><b>Mot de passe:</b></label>
 						<input type="password" class="form-control" name="pwd" placeholder="Entrer votre mot de passe">
 					</div>
 
@@ -20,7 +20,7 @@ include'login.php'
 						<input type="submit" class="btn btn-primary btn-lg" value="Se connecter" name="submit">
 					
 					
-						&nbsp;<button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'inscription.php';">S'inscrire</button>
+						&nbsp;<button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'formulaire_inscription.php';">S'inscrire</button>
 					
 				</table>
 				<span><?php echo $invalid; ?></span>
