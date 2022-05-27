@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+  <entete>
+    <nom>takezawa</nom>
+    <prenom>pierrick</prenom>
+    <ddn>2001-07-05</ddn>
+    <nationalite>francaise</nationalite>
+    <situationMaritale>celibataire</situationMaritale>
+    <permis>permis B</permis>
+    <mail>pierrick.takezawa@gmail.com</mail>
+  </entete>
+  <diplomes>
+    <diplome>
+      <annee>2001-01-01</annee>
+      <intitule>Brevet</intitule>
+    </diplome>
+    <diplome>
+      <annee>2002-02-02</annee>
+      <intitule>Bac</intitule>
+    </diplome>
+  </diplomes>
+  <stages>
+    <stage>
+      <annee>2018</annee>
+      <titre>aaa</titre>
+      <description>zzz</description>
+    </stage>
+    <stage>
+      <annee>2019</annee>
+      <titre>bb</titre>
+      <description/>
+    </stage>
+  </stages>
+  <competences>
+    <competence>
+      <titre>branleur</titre>
+      <description>aa</description>
+    </competence>
+  </competences>
+  <langues>
+    <langue>
+      <intitule>francais</intitule>
+      <niveau>natale</niveau>
+    </langue>
+    <langue>
+      <intitule>anglais</intitule>
+      <niveau>B1</niveau>
+    </langue>
+  </langues>
+  <loisirs>
+    <loisir>basket</loisir>
+    <loisir>rugby</loisir>
+    <loisir>fortnite</loisir>
+    <loisir>manger</loisir>
+    <loisir>dormir</loisir>
+  </loisirs>
+</cv>

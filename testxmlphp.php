@@ -6,7 +6,7 @@
 	//append child to parent using appendChild()*/
 	$proc = new XSLTProcessor;
 	$xml = new DOMDocument;
-	$xml->load('cv.xml');
+	$xml->load('zebi.xml');
 	$xsl = new DOMDocument;
 	$xsl->load('cv.xsl');
 	$proc->importStyleSheet($xsl); // attachement des règles xsl

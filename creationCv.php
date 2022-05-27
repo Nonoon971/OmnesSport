@@ -8,11 +8,6 @@
  	</script>
  	<script type= "text/javascript">
  $(document).ready(function(){
- $('#infoPrincipales').click(function(){
- $("#bleta").hide();
- $("#titre1").hide();
-
- });
 
  //---------------DIPLOMES------------------------------
 $("#valideDiplome").click(function() {
@@ -25,7 +20,7 @@ $("#valideDiplome").click(function() {
 		 $("#dateD3").hide();
 		 $("#nomD3").hide();
 	}
-	else if($('#nbDiplome').val()==2){
+	if($('#nbDiplome').val()==2){
 		 $("#dateD1").show();
 		 $("#nomD1").show();		 
 		 $("#dateD2").show();
@@ -34,7 +29,7 @@ $("#valideDiplome").click(function() {
 		 $("#dateD3").hide();
 		 $("#nomD3").hide();		
 	}
-	else if($('#nbDiplome').val()==3){
+	if($('#nbDiplome').val()==3){
 		 $("#dateD1").show();
 		 $("#nomD1").show();		 
 		 $("#dateD2").show();
@@ -216,16 +211,16 @@ $("#valideLoisir").click(function() {
 </head>
 <body>
 	<h1 align="center" id="titre">Créer un CV</h1>
-        <form action="pass.php" method="post">
+        <form action="sauvegardeCv.php" method="post">
 			<h3 align="center" id="titre1">INFORMATIONS PRINCIPALES</h3>
             <table border="1" id="bleta" align="center">
                 <tr>
                     <td>Nom :</td>
-                    <td><input type="text" name="nom"></td>
+                    <td><input type="text" name="nom" required="required"></td>
                 </tr>
                 <tr>
                     <td>Prénom :</td>
-                    <td><input type="text" name="prenom"></td>
+                    <td><input type="text" name="prenom" required="required"></td>
                 </tr>
                 <tr>
                     <td>Date de Naissance :</td>
@@ -304,7 +299,7 @@ $("#valideLoisir").click(function() {
 	            </tr>
 	            <tr style="display:none" id="descriptionS1">
 	                <td>Description :</td>
-	                <td><textarea id="descriptionS01" ></textarea></td>
+	                <td><input type="text" name="descriptionS01"></td>
 	            </tr>
 				
 				<tr style="display:none" id="anneeS2">
@@ -317,7 +312,7 @@ $("#valideLoisir").click(function() {
 	            </tr>
 	            <tr style="display:none" id="descriptionS2">
 	                <td>Description :</td>
-	                <td><textarea id="descriptionS02" ></textarea></td>
+	                <td><input type="text" name="descriptionS02"></td>
 	            </tr>
 
 				<tr style="display:none" id="anneeS3">
@@ -330,7 +325,7 @@ $("#valideLoisir").click(function() {
 	            </tr>
 	            <tr style="display:none" id="descriptionS3">
 	                <td>Description :</td>
-	                <td><textarea id="descriptionS03" ></textarea></td>
+	                <td><input type="text" name="descriptionS03"></td>
 	            </tr>
 	        </table>
         
@@ -348,29 +343,29 @@ $("#valideLoisir").click(function() {
 	            </tr>
 	            <tr style="display:none" id="competenceC1">
 	                <td>Type de compétences :</td>
-	                <td><input type="number" name="competenceC01"></td>
+	                <td><input type="text" name="competenceC01"></td>
 	             </tr>
 	            <tr style="display:none" id="descriptionC1">
 	                <td>Description :</td>
-	                <td><textarea id="descriptionC01" ></textarea></td>
+	                <td><input type="text" name="descriptionC01"></td>
 	            </tr>
 
 	            <tr style="display:none" id="competenceC2">
 	                <td>Type de compétences :</td>
-	                <td><input type="number" name="competenceC02"></td>
+	                <td><input type="text" name="competenceC02"></td>
 	             </tr>
 	            <tr style="display:none" id="descriptionC2">
 	                <td>Description :</td>
-	                <td><textarea id="descriptionC02" ></textarea></td>
+	                <td><input type="text" name="descriptionC02"></td>
 	            </tr>
 
 	            <tr style="display:none" id="competenceC3">
 	                <td>Type de compétences :</td>
-	                <td><input type="number" name="competenceC03"></td>
+	                <td><input type="text" name="competenceC03"></td>
 	             </tr>
 	            <tr style="display:none" id="descriptionC3">
 	                <td>Description :</td>
-	                <td><textarea id="descriptionC03" ></textarea></td>
+	                <td><input type="text" name="descriptionC03"></td>
 	            </tr>
 	        </table>
 

@@ -116,20 +116,7 @@
 	$loisir = $xml->createElement("loisir","Surf");
 	$loisirs->appendChild($loisir);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	//sauvegarde des informations en fichier XML----------------------
 	echo "<xmp>" . $xml->saveXML()."</xmp>";
 	$xml->save("zebi.xml") or die("Error, Unable to create XML file");
 

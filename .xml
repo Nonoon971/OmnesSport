@@ -13,10 +13,5 @@
   <stages/>
   <competences/>
   <langues/>
-  <loisirs>
-    <loisir>a</loisir>
-    <loisir>z</loisir>
-    <loisir>ze</loisir>
-    <loisir>r</loisir>
-  </loisirs>
+  <loisirs/>
 </cv>
