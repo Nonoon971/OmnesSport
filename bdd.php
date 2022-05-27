@@ -24,5 +24,5 @@ $req="INSERT INTO utilisateur (Prenom,Nom,Age,Type,Email,Mdp,Adresse,Tel,Profess
 
 $res=mysqli_query($db_handle,$req); 
 echo "<p>Add successful.</p>";
-header("location: formulaire.html");
+header("location: test2.html");
 ?>
