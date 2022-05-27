@@ -4,6 +4,7 @@
     $db_found = mysqli_select_db($db_handle, $database);
 echo "<style>#reserve{background-color : blue ;}
 						 #tabRdv{margin: 0 auto;}
+						 a{ text-decoration-line : none;}
 							input{margin: 0 auto;}
 									  </style>";
   //  $coachName= isset($_POST["nom"])? $_POST["nom"] : "";
