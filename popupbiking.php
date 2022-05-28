@@ -13,7 +13,7 @@
 
 		if ($db_found)
 		{
-			$sql = "SELECT Nom, Prenom, Tel, Profession, Email,CV FROM utilisateur WHERE Type = 'coach' AND Profession ='coach de biking'"; //Le cv se peut qu'il doit être récupéré quand on clique sur le bouton
+			$sql = "SELECT Nom, Prenom, Tel, Profession, Email,CV, Online FROM utilisateur WHERE Type = 'coach' AND Profession ='coach de biking'"; //Le cv se peut qu'il doit être récupéré quand on clique sur le bouton
 
 			$result = mysqli_query($db_handle, $sql);
 
@@ -33,6 +33,7 @@
 					$profession = $data['Profession'];
 					$mail = $data['Email'];
 					$cv = $data['CV']; 
+					$enLigne = $data['Online'];
 
 					$photo =  strtolower($prenom .$nom);
 
@@ -62,8 +63,18 @@
 		<div class="spacer"></div>
 		<div id="boutton">
 			<br><br><button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'biking.php';">Prendre RDV</button>
-			<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'biking.php';" style="width: 150px;">Echanger avec <br>le coach</button>
-			<button type="button" class="btn btn-warning btn-lg" onclick="window.location.href = 'biking.php';">Voir son CV</button>
+			<?php if($enLigne != 'true'):  ?>
+				<span style="color: red;"> &bull;Le coach est déconnecté</span>
+			<!-- Si le coach est connecté on affiche le bouton de chat -->
+			<?php elseif($enLigne == 'true'):  ?>
+			<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'chat.php';" style="width: 150px;">Echanger avec <br>le coach</button> <span style="color: green;"> &bull;Le coach est en ligne</span>
+			
+
+			<?php endif; ?>
+			<form action="cvCoach.php" method="post">
+				<input type="submit" name="cvCoach" class="btn btn-warning btn-lg" value="Voir son CV" >
+				<?php echo '<input type="text" name="name" value="'.$photo .'" style="display: none;">'; ?>
+			</form>
 
 		</div>
 	</div>
