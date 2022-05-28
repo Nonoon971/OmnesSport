@@ -143,10 +143,10 @@
 						</div>
 
 						<div class="item">
-							<img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+							<img src="evenement2.png" alt="Image">
 							<div class="carousel-caption">
-								<h3>More Sell $</h3>
-								<p>Lorem ipsum...</p>
+								<h3>Final NBA</h3>
+								<p>Finale du championnat NBA va bientôt se dérouler</p>
 							</div>      
 						</div>
 					</div>
