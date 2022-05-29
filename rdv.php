@@ -54,6 +54,9 @@
 
 				border-radius: 2em;
 			}
+			h3{
+				background-color: grey;
+			}
 		</style>
 	</head>
 	<body id="rdv">
