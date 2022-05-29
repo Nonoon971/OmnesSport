@@ -1,3 +1,4 @@
+
 <?php 
     $database = "omnessport";
 	$db_handle = mysqli_connect('localhost', 'root', '');
