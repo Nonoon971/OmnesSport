@@ -47,6 +47,10 @@ if(isset($_POST['submit']))
 
 			$_SESSION['nom'] = $NOM;
 			$_SESSION['prenom'] = $PRE;
+			$_SESSION['Email'] = $EML;
+			$_SESSION['Adresse'] = $ADRESSE;
+			$_SESSION['telephone'] = $TEL;
+			$_SESSION['type'] = $TYPE;
 			header("location: loginsuccess.php");
 		}
 	}
