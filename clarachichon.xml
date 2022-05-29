@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+  <entete>
+    <nom>Chichon</nom>
+    <prenom>Clara</prenom>
+    <ddn>1993-03-03</ddn>
+    <nationalite>Suédois</nationalite>
+    <situationMaritale>Célibataire</situationMaritale>
+    <permis>Permis B</permis>
+    <mail>chich@gmail.com</mail>
+  </entete>
+  <situationActuelle>coach de fitness</situationActuelle>
+  <diplomes>
+    <diplome>
+      <annee>2002-05-06</annee>
+      <intitule>brevet</intitule>
+    </diplome>
+  </diplomes>
+  <stages>
+    <stage>
+      <annee>2004</annee>
+      <titre>Vendeuse</titre>
+      <description>Vendeuse dans un marché</description>
+    </stage>
+  </stages>
+  <competences>
+    <competence>
+      <titre>Adaptation</titre>
+      <description>Je m'adapte a tout type de personne dans mon travail</description>
+    </competence>
+  </competences>
+  <langues>
+    <langue>
+      <intitule>Français</intitule>
+      <niveau>Langue natale</niveau>
+    </langue>
+    <langue>
+      <intitule>Anglais</intitule>
+      <niveau>Bilingue</niveau>
+    </langue>
+    <langue>
+      <intitule>Espagnol</intitule>
+      <niveau>Bilingue</niveau>
+    </langue>
+    <langue>
+      <intitule>Allemand</intitule>
+      <niveau>Bilingue</niveau>
+    </langue>
+  </langues>
+  <loisirs>
+    <loisir>Marche à pied</loisir>
+    <loisir>Jeu vidéo</loisir>
+    <loisir>Dormir</loisir>
+  </loisirs>
+</cv>

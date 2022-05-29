@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+  <entete>
+    <nom>Ballon</nom>
+    <prenom>Paul</prenom>
+    <ddn>1010-01-01</ddn>
+    <nationalite>Nationalité</nationalite>
+    <situationMaritale>Situation maritale</situationMaritale>
+    <permis>Permis</permis>
+    <mail>mail@gmail.com</mail>
+  </entete>
+  <situationActuelle>Situation Actuelle</situationActuelle>
+  <diplomes>
+    <diplome>
+      <annee>2001-01-01</annee>
+      <intitule>Nom du diplome1</intitule>
+    </diplome>
+    <diplome>
+      <annee>2002-02-02</annee>
+      <intitule>Nom du diplome2</intitule>
+    </diplome>
+    <diplome>
+      <annee>2003-03-03</annee>
+      <intitule>Nom du diplome3</intitule>
+    </diplome>
+  </diplomes>
+  <stages>
+    <stage>
+      <annee>2004</annee>
+      <titre>Poste du stage1</titre>
+      <description>Description1</description>
+    </stage>
+    <stage>
+      <annee>2005</annee>
+      <titre>Poste du stage2</titre>
+      <description>Description2</description>
+    </stage>
+    <stage>
+      <annee>2006</annee>
+      <titre>Poste du stage3</titre>
+      <description>Description3</description>
+    </stage>
+  </stages>
+  <competences>
+    <competence>
+      <titre>Type de compétence1</titre>
+      <description>Description1</description>
+    </competence>
+    <competence>
+      <titre>Type de compétence2</titre>
+      <description>Description2</description>
+    </competence>
+    <competence>
+      <titre>Type de compétence3</titre>
+      <description>Description3</description>
+    </competence>
+  </competences>
+  <langues>
+    <langue>
+      <intitule>Langue1</intitule>
+      <niveau>Niveau1</niveau>
+    </langue>
+    <langue>
+      <intitule>Langue2</intitule>
+      <niveau>Niveau2</niveau>
+    </langue>
+    <langue>
+      <intitule>Langue3</intitule>
+      <niveau>Niveau3</niveau>
+    </langue>
+    <langue>
+      <intitule>Langue4</intitule>
+      <niveau>Niveau4</niveau>
+    </langue>
+  </langues>
+  <loisirs>
+    <loisir>Loisir1</loisir>
+    <loisir>Loisir2</loisir>
+    <loisir>Loisir3</loisir>
+    <loisir>Loisir4</loisir>
+    <loisir>Loisir5</loisir>
+  </loisirs>
+</cv>

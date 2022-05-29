@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cv>
+  <entete>
+    <nom>Lamachine</nom>
+    <prenom>Didier</prenom>
+    <ddn>1989-02-02</ddn>
+    <nationalite>Français</nationalite>
+    <situationMaritale>Veuf</situationMaritale>
+    <permis>Permis PTAC</permis>
+    <mail>lamachine@gmail.com</mail>
+  </entete>
+  <situationActuelle>coach de biking</situationActuelle>
+  <diplomes>
+    <diplome>
+      <annee>2008-11-19</annee>
+      <intitule>BTS aide à la personne</intitule>
+    </diplome>
+    <diplome>
+      <annee>2006-06-14</annee>
+      <intitule>Bac</intitule>
+    </diplome>
+    <diplome>
+      <annee>2003-05-12</annee>
+      <intitule>Brevet</intitule>
+    </diplome>
+  </diplomes>
+  <stages>
+    <stage>
+      <annee>2008</annee>
+      <titre>Aide aux personnes agés</titre>
+      <description>Stage en EPAD</description>
+    </stage>
+    <stage>
+      <annee>2007</annee>
+      <titre>Coach de fitness</titre>
+      <description>coach de cardio dans à Basic-Fit</description>
+    </stage>
+  </stages>
+  <competences>
+    <competence>
+      <titre>Grand coureur</titre>
+      <description>Gagnant du marathon de New York en 2016</description>
+    </competence>
+    <competence>
+      <titre>Coach de fitness</titre>
+      <description>En plus d'être coach de biking je peux être aussi coach de fitness</description>
+    </competence>
+  </competences>
+  <langues>
+    <langue>
+      <intitule>Français</intitule>
+      <niveau>natale</niveau>
+    </langue>
+  </langues>
+  <loisirs>
+    <loisir>Course à pied</loisir>
+    <loisir>Vélo</loisir>
+    <loisir>Lecture</loisir>
+  </loisirs>
+</cv>
