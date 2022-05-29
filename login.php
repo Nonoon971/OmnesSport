@@ -27,8 +27,8 @@
 			}
 
 			if($rows==1){
-				$_SESSION['Nom']=$LastName;
-				$_SESSION['Prenom']=$Name;
+				$_SESSION['nom']=$LastName;
+				$_SESSION['prenom']=$Name;
 				$_SESSION['ID']=$ID;
 				$_SESSION['conn']=1;
 				header("location: Musculation.php");

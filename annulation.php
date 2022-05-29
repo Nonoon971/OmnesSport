@@ -25,5 +25,6 @@
 
  	
     }
+    header("location: rdv.php");
 
 ?>

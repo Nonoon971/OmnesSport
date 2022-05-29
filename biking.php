@@ -33,22 +33,22 @@
 	
 	<div id="section">
 
-		 <h2> Musculation</h2>
+		 <h2>Biking</h2>
 
-		 <p>Notre salle OmnesSport met a disposition une salle de musculattion pour tous les abonnés <br><br> 
-		 	Vous y trouverez toutes les machines dont vous aurrez besoin pour dévelloper votre musculature. <br><br>
-		 Cette salle s'étant sur plus de 400m <sup>2</sup> et surplombe le parc végétal, vous permettant de faire du sport <strong>comme si vous vous trouviez en pleine nature !</strong></p> 
+		 <p>Notre salle OmnesSport propose des séances de <strong>Biking</strong> pour tous les abonnés <br><br> 
+		 	Vous y trouverez toutes les machines dont vous aurrez besoin pour dévelloper votre corps. <br><br>
+		 Cette salle est situé dans un cinéma, vous permettant de faire du sport <strong>tout en apréciant un bon film !</strong></p> 
 
-		 <img id="salle" src="sallemuscu.jpg">
+		 <img id="salle" src="sallebiking.jpg">
 	    
 		<p> Le coach de musculation est M.personne </p>
 		   
 		<div id="description">
-			<p> Salut moi c'est M.Personne, je suis un coach sportif spécialisé dans la musculation donc si tu a envie d'avoir un corps d'Appolon, n'hésite pas à reserver un crénau avec moi !</p>
+			<p> Salut moi c'est Didier Lamachine, je suis un coach sportif spécialisé dans le Biking donc si tu a envie d'avoir un corps d'Appolon, n'hésite pas à reserver un crénau avec moi !</p>
 
 			<p id="dispo"> Voici mes disponibilités </p> 
          
-			<?php  $coachName='Personne' ; $Sport='muscu'?>
+			<?php  $coachName='Lamachine' ; $Sport='biking'?>
 			
 
 			<?php require('tableauRDV.php')?>

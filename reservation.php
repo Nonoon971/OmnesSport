@@ -89,13 +89,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">
 	<title>OmnesSport</title>
 </head>
 <body>
 	  <?php include_once("header.php") ?>
 	  <h3>Réservation</h3>
-     <p>Vous venez de réserver le crénaux de : <?php echo $_SESSION['Nom'].$Jresa ." le ".$Hresa. " avec le coach ".$Cresa?></p>
+     <p>Vous, <?php echo $_SESSION['nom'] ?> venez de réserver le crénaux de : <?php echo $Jresa ." le ".$Hresa. " avec le coach ".$Cresa?></p>
 </body>
 </html>
 

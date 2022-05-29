@@ -33,22 +33,20 @@
 	
 	<div id="section">
 
-		 <h2> Musculation</h2>
+		 <h2>Tennis</h2>
 
-		 <p>Notre salle OmnesSport met a disposition une salle de musculattion pour tous les abonnés <br><br> 
-		 	Vous y trouverez toutes les machines dont vous aurrez besoin pour dévelloper votre musculature. <br><br>
-		 Cette salle s'étant sur plus de 400m <sup>2</sup> et surplombe le parc végétal, vous permettant de faire du sport <strong>comme si vous vous trouviez en pleine nature !</strong></p> 
+		 <p>Notre complexe organise et cours et des rencontres de Tennis pour que tu puisse améliorer tes qualité dans ce sport</p> 
 
-		 <img id="salle" src="sallemuscu.jpg">
+		 <img id="salle" src="salletennis.jpg">
 	    
-		<p> Le coach de musculation est M.personne </p>
+		<p> Le coach de basket est Charlie Choco</p>
 		   
 		<div id="description">
-			<p> Salut moi c'est M.Personne, je suis un coach sportif spécialisé dans la musculation donc si tu a envie d'avoir un corps d'Appolon, n'hésite pas à reserver un crénau avec moi !</p>
+			<p> Salut moi c'est Charlie Choco, avec moi, tu vas devenir le meilleur joueur de tennis de ton groupe d'ami, donc réserve dès maintenant ton rendez-vous !</p>
 
 			<p id="dispo"> Voici mes disponibilités </p> 
          
-			<?php  $coachName='Personne' ; $Sport='muscu'?>
+			<?php  $coachName='Choco' ; $Sport='tennis'?>
 			
 
 			<?php require('tableauRDV.php')?>
