@@ -32,10 +32,11 @@
 				{
 					$nom = $data['Nom'];
 					$prenom = $data['Prenom'];
+					$ID = $data['ID'];
 
 					echo '<option value="';
-					echo  $nom .' ' .$prenom .'">';
-					echo $nom .' ' .$prenom;
+					echo $ID .'">';
+					echo $nom.' '.$prenom;
 					echo '</option>';
 
 				}
@@ -46,12 +47,21 @@
 				if(isset($_POST['submit3']))
 				{
 					$coach = isset($_POST['coach']) ? $_POST['coach'] : "";
+					$coachID = $coach;
 
 					if($coach !="")
 					{
-						$sql = "DELETE FROM utilisateur WHERE Nom ='$nom' AND Prenom ='$prenom' "; 
-
+						$sql = "SELECT Nom, Prenom FROM utilisateur WHERE ID ='$coachID'"; 
 						$result = mysqli_query($db_handle, $sql);
+
+						$data = mysqli_fetch_assoc($result);
+						$nom = $data['Nom'];
+						$prenom = $data['Prenom'];
+						
+						$sql = "DELETE FROM utilisateur WHERE ID ='$coach'"; 
+						$result = mysqli_query($db_handle, $sql);
+
+						
 						echo "<br>Suppression de $nom $prenom effectué";
 					}
 					else
