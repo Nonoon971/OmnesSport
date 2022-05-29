@@ -52,7 +52,9 @@
 			</style>
 		</head>
 		<body>
+			<?php include_once('header.php');  ?>
 			<h2><b>Veuillez nous excuser nous avons pas encore de coach de basket disponible !</b></h2>
+			<?php include_once('footer.php'); ?>
 		</body>
 		</html>
 	<?php else: ?>
