@@ -1,4 +1,4 @@
-<a style="margin-left: 30px;" class="btn btn-danger btn-lg" href="#demo">Supprimer un coach</a>
+<a style="margin-left: 30px;" name="suppression" class="btn btn-danger btn-lg" href="#demo">Supprimer un coach</a>
 
 <div id="demo" class="modal">
 	<div class="modal_content">
@@ -25,7 +25,7 @@
 			} 
 			else 
 			{
-				echo '<form action="" method="post" id="info-text">
+				echo '<div><form action="" method="post" id="info-text">
 				<select name="coach" id="coach-select">
 				<option value="">--Choississez un coach--</option>';
 				while ($data = mysqli_fetch_assoc($result))
@@ -40,19 +40,27 @@
 
 				}
 				echo '</select>
-				<input type="submit" class="btn btn-warning btn-lg" value="Suppression" name="submit">
-				</div>';
+				<input type="submit" class="btn btn-warning btn-lg" value="Suppression" name="submit3">
+				</form>';
 
-				if(isset($_POST['submit']))
+				if(isset($_POST['submit3']))
 				{
 					$coach = isset($_POST['coach']) ? $_POST['coach'] : "";
 
-					$sql = "DELETE FROM utilisateur WHERE Nom ='$nom' AND Prenom ='$prenom' "; 
+					if($coach !="")
+					{
+						$sql = "DELETE FROM utilisateur WHERE Nom ='$nom' AND Prenom ='$prenom' "; 
 
-					$result = mysqli_query($db_handle, $sql);
-
+						$result = mysqli_query($db_handle, $sql);
+						echo "<br>Suppression de $nom $prenom effectué";
+					}
+					else
+					{
+						echo "<br>Veuillez choisir un coach";
+					}
 
 				}
+				echo "</div>";
 
 
 			}

@@ -47,6 +47,10 @@ if(isset($_POST['submit']))
 
 			$_SESSION['nom'] = $NOM;
 			$_SESSION['prenom'] = $PRE;
+			$_SESSION['Email'] = $EML;
+			$_SESSION['Adresse'] = $ADRESSE;
+			$_SESSION['telephone'] = $TEL;
+			$_SESSION['type'] = $TYPE;
 			header("location: loginsuccess.php");
 		}
 	}
@@ -130,13 +134,15 @@ if(isset($_POST['submit']))
 									<input type="password" class="form-control" name="pwd" placeholder="Entrer votre mot de passe">
 								</div>
 
+								
+
 								<div class="d-flex justify-content-end pt-3">
 									<br><input type="submit" class="btn btn-primary btn-lg" name="submit" value="Soumettre">
-									
+
 								</div>
 
 							</div>
-							
+
 
 						</div>
 					</div>
@@ -148,6 +154,6 @@ if(isset($_POST['submit']))
 	</div>
 
 
-	
+
 
 	<?php endif; ?>

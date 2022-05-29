@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
 			$sql = mysqli_query($conn, "UPDATE `utilisateur` SET `Online` = 'true' WHERE Email = '$EML'");
 			$data2 = mysqli_fetch_assoc($sql);
 			$_SESSION['enLigne'] = $data2['Online'];
-			header("location: loginsuccess.php");
+			echo '<meta http-equiv="refresh" content="1;url=loginsuccess.php?page=page_Acces" />';
 		}
 		else
 		{

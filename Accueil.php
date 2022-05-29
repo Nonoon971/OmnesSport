@@ -110,7 +110,7 @@
 				<!-- Faire un carrousel -->
 
 				<div id="contenu">
-					<img src="image1Accueil.png" alt="image medecin" height="320" width="400">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2625.3227869951947!2d2.2818962!3d48.8520549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67004a52552e3%3A0x47d6b1ac0c239d3c!2s37%20Quai%20de%20Grenelle%2C%2075015%20Paris!5e0!3m2!1sfr!2sfr!4v1653840280312!5m2!1sfr!2sfr" width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 
 				<div id="text">
@@ -127,9 +127,10 @@
 				<h2>Evènement de la semaine:</h2>
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
+					<ol class="carousel-indicators" >
+						<li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color: black;"></li>
+						<li data-target="#myCarousel" data-slide-to="1" style="background-color: black;"></li>
+						<li data-target="#myCarousel" data-slide-to="2" style="background-color: black;"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
@@ -137,8 +138,16 @@
 						<div class="item active">
 							<img src="evenement1.png" alt="Image">
 							<div class="carousel-caption">
-								<h3>Word Cup 2022 FIBA</h3>
+								<h3>World Cup 2022 FIBA</h3>
 								<p>Women's basketball world cup</p>
+							</div>      
+						</div>
+
+						<div class="item">
+							<img src="evenement3.png" alt="Image">
+							<div class="carousel-caption">
+								<h3>World Cup 2022 FIFA</h3>
+								<p>Coupe du monde 2022 FIFA au Qatar</p>
 							</div>      
 						</div>
 
@@ -149,6 +158,7 @@
 								<p>Finale du championnat NBA va bientôt se dérouler</p>
 							</div>      
 						</div>
+
 					</div>
 
 					<!-- Left and right controls -->

@@ -16,7 +16,6 @@
 				<table border="2" align="center" width="650px">
 					<tr>
 						<td>
-							<img src="{cv/entete/photo/@scr}" height="80" width="120" class="image"/>
 							<strong><xsl:value-of select="cv/entete/prenom "/><xsl:text>&#x09;</xsl:text><xsl:value-of select="cv/entete/nom" /></strong><br/>
 							<xsl:value-of select="cv/entete/ddn" />, <xsl:value-of select="cv/entete/nationalite" /><br/>
 							<xsl:value-of select="cv/entete/situationMaritale" />, <xsl:value-of select="cv/entete/permis" /><br/>

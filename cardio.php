@@ -15,11 +15,12 @@
 		<head>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">
+			
 			<link rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">
 			<script src="./popup.js" defer>	
 			</script>
 			<title>Cardio-Training</title>
@@ -53,7 +54,7 @@
 		</head>
 		<body>
 			<?php include_once('header.php');  ?>
-			<h2><b>Veuillez nous excuser nous avons pas encore de coach de basket disponible !</b></h2>
+			<h2><b>Veuillez nous excuser nous avons pas encore de coach de Cardio-Training disponible !</b></h2>
 			<?php include_once('footer.php'); ?>
 		</body>
 		</html>

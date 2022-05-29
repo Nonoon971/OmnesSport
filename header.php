@@ -26,35 +26,38 @@
 							<li><a href="plongeon.php">Plongeon</a></li>
 						</ul>
 					</li>
-					<li><a href="salle.php">Salle de sport Omnes</a></li>
+					<li id="test"><a href="salle.php">Salle de sport Omnes</a>
+						<ul>
+							<li><a href="reservation_ring_boxe.php">Ring de boxe</a></li>
+						</ul>
+					</li>
 				</ul>
-			</li>
-			<li>
-				<a href="#" data-popup-ref="monPopup">Recherche</a>
+				<li>
+					<a href="#" data-popup-ref="monPopup">Recherche</a>
 
-				<div class="popup" data-popup-id="monPopup">
-					<div class="popup-content">
+					<div class="popup" data-popup-id="monPopup">
+						<div class="popup-content">
 
-						<div class="popup-body">
-							<div class="col-md-12 col-lg-5 align-self-center mb-3">
-								<form action="recherche.php" method="post" class="form-inline">
-									<div class="input-group">
-										<input id="recherche" type="search" name="q" class="form-control" placeholder="Spécialité ou Nom ou Etablissement">
-										<div class="input-group-btn">
-											<button id="searchbtn" type="submit" class="btn btn-info"><span class="fa fa-search"></span>
-												Chercher
-											</button>
+							<div class="popup-body">
+								<div class="col-md-12 col-lg-5 align-self-center mb-3">
+									<form action="recherche.php" method="post" class="form-inline">
+										<div class="input-group">
+											<input id="recherche" type="search" name="q" class="form-control" placeholder="Spécialité ou Nom ou Etablissement">
+											<div class="input-group-btn">
+												<button id="searchbtn" type="submit" class="btn btn-info"><span class="fa fa-search"></span>
+													Chercher
+												</button>
+											</div>
 										</div>
-									</div>
-								</form>
+									</form>
+								</div>
 							</div>
-						</div>
-					</div> 
-				</div>
+						</div> 
+					</div>
 
-			</li>
-			<li><a href="rdv.php">Rendez-vous</a></li>
-			<li><a href="loginsuccess.php">Votre Compte</a></li>
+				</li>
+				<li><a href="rdv.php">Rendez-vous</a></li>
+				<li><a href="loginsuccess.php">Votre Compte</a></li>
 			<!-- 
 				<li id="login"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  tester avec session pour remplacer et tt
 			-->
