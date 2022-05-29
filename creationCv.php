@@ -245,10 +245,7 @@ $("#valideLoisir").click(function() {
                 <tr>
                     <td>Situation Actuelle :</td>
                     <td><input type="text" name="situationActuelle"></td>
-                </tr>
-                <tr>
-                	<td colspan="2" align="center"><input type="file" name="photo" accept="image/png, image/jpeg"></td>
-                </tr>       
+                </tr>      
             </table>
 
 
