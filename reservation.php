@@ -52,7 +52,7 @@
 
       	///inserer le nouveau rdv		
 			
-    	$sql="INSERT INTO reservation (heure,jour,Sport) VALUES('$Hresa','$Jresa','$Spor')";
+    	$sql="INSERT INTO rdv (Date,heure,Lieu,Sport,capacite,Specification,jour,coach) VALUES('$Jresa','$Hresa','Paris','$Sport','21 places','non','$Jresa', 'test')";
 
     	$result = mysqli_query($db_handle, $sql);
 
