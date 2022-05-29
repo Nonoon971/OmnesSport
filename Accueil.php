@@ -110,7 +110,7 @@
 				<!-- Faire un carrousel -->
 
 				<div id="contenu">
-					<img src="image1Accueil.png" alt="image medecin" height="320" width="400">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2625.3227869951947!2d2.2818962!3d48.8520549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67004a52552e3%3A0x47d6b1ac0c239d3c!2s37%20Quai%20de%20Grenelle%2C%2075015%20Paris!5e0!3m2!1sfr!2sfr!4v1653840280312!5m2!1sfr!2sfr" width="400" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 
 				<div id="text">
