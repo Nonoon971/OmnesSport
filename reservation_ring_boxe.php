@@ -9,13 +9,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">
+	<script src="./popup.js" defer>	
+	</script>
 	<title>Reservation ring de boxe</title>
 	<style type="text/css">
 		#section{
 			margin : 0 auto;
 			text-align: center;
 			background-color: #ADD8E6;
+		}
+		#test:hover ul li
+		{
+			display: block;
+			left: 190px;	
+			bottom: 28px;		
 		}
 		h2{
 			background-color: grey;
