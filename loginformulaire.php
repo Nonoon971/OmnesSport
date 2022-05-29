@@ -132,7 +132,7 @@ include'login.php'
 		<form action="" method="post">
 			<input style="margin-left: 30px;" type="submit" class="btn btn-primary btn-lg" name="deconnexion" value="Se déconnecter">
 			
-			<input style="margin-left: 30px;" type="submit" class="btn btn-warning btn-lg" name="createCV" value="Ajouter un CV de coach">
+			<a href="creationCV.php" target="_blank" style="margin-left: 30px;" class="btn btn-warning btn-lg">Ajouter le CV d'un coach</a>
 			<?php include('suppressioncoach.php'); ?>
 			<br>
 			<?php include('ajoutcoach.php'); ?>
