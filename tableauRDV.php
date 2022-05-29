@@ -9,10 +9,11 @@ echo "<style>#reserve{background-color : blue ;}
 							input{margin: 0 auto;}
 									  </style>";
   //  $coachName= isset($_POST["nom"])? $_POST["nom"] : "";
+			$sportName= isset($_POST["nom"])? $_POST["nom"] : "";						  
 
     if($db_found){
-    	$sql="SELECT Heure,jour FROM rdv WHERE coach='$coachName'";
-    //	$sql="SELECT Heure,jour FROM rdv WHERE sport='$coachName'";
+    	//$sql="SELECT Heure,jour FROM rdv WHERE coach='$coachName'";
+    	$sql="SELECT Heure,jour FROM rdv WHERE sport='$sportName'";
 
 
     	$result = mysqli_query($db_handle, $sql);
@@ -71,7 +72,7 @@ echo "<style>#reserve{background-color : blue ;}
 					else{
 								$marque=(int)$marque+ (int)$y;
 						//	echo "<td id='". (string)$marque ."'><input type='submit' name='valider' value='". $HorraireALL[$i] ."'></td>";
-							echo "<td id='". (string)$marque ."'><a href='reservation.php?Jour=".$HorraireALL[$i]."&Heure=".$DayALL[$y]."&Name=".$coachName."&Sport=".$Sport."'>". $HorraireALL[$i] ."</a></td>";
+							echo "<td id='". (string)$marque ."'><a href='reservation.php?Jour=".$HorraireALL[$i]."&Heure=".$DayALL[$y]."&Name=".$sportName."&Sport=".$Sport."'>". $HorraireALL[$i] ."</a></td>";
 							$marque=$marque-$y;
 					}
 				}

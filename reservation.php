@@ -36,27 +36,27 @@
 	$db_handle = mysqli_connect('localhost', 'root', '');
     $db_found = mysqli_select_db($db_handle, $database);
 
-    $CoachID=0;
-    $rdvID=0;
+    //$CoachID=0;
+    //$rdvID=0;
 
     if($db_found){
 
-        //////recuperer l'ID du coach
+        /*recuperer l'ID du coach
     	$sql="SELECT ID FROM utilisateur WHERE Nom='$Cresa'";
 
     	$result = mysqli_query($db_handle, $sql);
 
-      	$data = mysqli_fetch_assoc($result);
+      	$data = mysqli_fetch_assoc($result);*/
 
-      	$CoachID=$data['ID'];	
+      	//$CoachID=$data['ID'];	
 
       	///inserer le nouveau rdv		
 			
-    	$sql="INSERT INTO rdv (`Heure`,`Sport`,`jour`,`coach`) VALUES('$Jresa','$Sport','$Hresa','$Cresa')";
+    	$sql="INSERT INTO reservation (heure,jour,Sport) VALUES('$Hresa','$Jresa','$Spor')";
 
     	$result = mysqli_query($db_handle, $sql);
 
-    	///recuperer l'ID du rdv
+    	/*recuperer l'ID du rdv
 
     	$sql="SELECT ID FROM rdv WHERE coach='$Cresa' AND jour='$Hresa' AND Heure='$Jresa' AND Sport='$Sport'";
 
@@ -64,11 +64,11 @@
 
       	while($data = mysqli_fetch_assoc($result)){
 
-      			$rdvID=$data['ID'];
+      			$rdvID=$data['ID'];*/
       	}
 
       	///Ajout a la table d'affiliation pour le client et le coach
-
+/*
       	$sql="INSERT INTO affiliation (`ID_User`,`ID_RDV`) VALUES($CoachID,$rdvID)";
 
     	$result = mysqli_query($db_handle, $sql);
@@ -80,8 +80,7 @@
     	$result = mysqli_query($db_handle, $sql);
 
 
-
-    }
+    */
 
 ?>
 <!DOCTYPE html>
@@ -93,9 +92,9 @@
 	<title>OmnesSport</title>
 </head>
 <body>
-	  <?php include_once("header.php") ?>
+	 
 	  <h3>Réservation</h3>
-     <p>Vous venez de réserver le crénaux de : <?php echo $_SESSION['Nom'].$Jresa ." le ".$Hresa. " avec le coach ".$Cresa?></p>
+     <p>Vous venez de réserver le crénaux de : <?php echo $Jresa ." le ".$Hresa?></p>
 </body>
 </html>
 
