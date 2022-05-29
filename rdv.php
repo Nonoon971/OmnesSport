@@ -63,7 +63,6 @@
 		<?php include('header.php'); ?>
 
 		<div id="section">
-			<h3>Mes rendez-vous de la semaine</h3>
 
 			<?php 
 
@@ -74,6 +73,8 @@
 			if($db_found){
 
 				$Id_sess=$_SESSION['ID'];
+
+
 
 				$sql="SELECT ID_RDV FROM affiliation WHERE ID_User='$Id_sess' ";
 
@@ -116,7 +117,8 @@
 
 			?>
 		</div>
-		<?php include('footer.php'); ?>
+
+		<?php echo "<h3>".$Id_sess."</h3>";include('footer.php'); ?>
 	</body>
 	</html>
 
