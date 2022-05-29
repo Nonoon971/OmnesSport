@@ -127,9 +127,10 @@
 				<h2>Evènement de la semaine:</h2>
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
+					<ol class="carousel-indicators" >
+						<li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color: black;"></li>
+						<li data-target="#myCarousel" data-slide-to="1" style="background-color: black;"></li>
+						<li data-target="#myCarousel" data-slide-to="2" style="background-color: black;"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
@@ -137,8 +138,16 @@
 						<div class="item active">
 							<img src="evenement1.png" alt="Image">
 							<div class="carousel-caption">
-								<h3>Word Cup 2022 FIBA</h3>
+								<h3>World Cup 2022 FIBA</h3>
 								<p>Women's basketball world cup</p>
+							</div>      
+						</div>
+
+						<div class="item">
+							<img src="evenement3.png" alt="Image">
+							<div class="carousel-caption">
+								<h3>World Cup 2022 FIFA</h3>
+								<p>Coupe du monde 2022 FIFA au Qatar</p>
 							</div>      
 						</div>
 
@@ -149,6 +158,7 @@
 								<p>Finale du championnat NBA va bientôt se dérouler</p>
 							</div>      
 						</div>
+
 					</div>
 
 					<!-- Left and right controls -->
