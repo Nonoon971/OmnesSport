@@ -1,4 +1,4 @@
-<a style="margin-left: 30px;" class="btn btn-danger btn-lg" href="#demo">Supprimer un coach</a>
+<a style="margin-left: 30px;" name="suppression" class="btn btn-danger btn-lg" href="#demo">Supprimer un coach</a>
 
 <div id="demo" class="modal">
 	<div class="modal_content">

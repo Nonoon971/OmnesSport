@@ -29,7 +29,6 @@
 	<?php include('header.php'); ?>
 
 	<?php include('loginformulaire.php'); ?>
-	
 
 </body>
 </html>

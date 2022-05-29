@@ -1,7 +1,7 @@
 <?php
 include'login.php'
 ?>
-<?php if(!isset($_SESSION['nom'])):  ?>
+<?php if(!isset($_SESSION['nom'])):?>
 	<div class="login">
 		<div class="container">
 			<h2><b>Se connecter à un compte déjà existant</b></h2><br>
@@ -28,12 +28,12 @@ include'login.php'
 		</div>
 	</div>
 
-<?php else: ?>
+<?php else:?>
 	<div class="alert alert-success" role="alert">
 		Bonjour et bienvenue sur votre compte <?php echo $_SESSION['prenom'] ."&nbsp;" .$_SESSION['nom']; ?>
 	</div>
 	<!-- Si c le client qui se connecte on affiche ceci -->
-	<?php if($_SESSION['type'] == 'Client'): ?>
+	<?php if($_SESSION['type'] == 'Client'):?>
 
 		<div id="infoCompte" style="border: 2px solid black; width: 400px; color: black; font-size: 18px; margin-left: 30px;">
 			
@@ -65,7 +65,7 @@ include'login.php'
 			}
 		?>
 		<!-- Si c le coach qui se connecte on affiche ceci -->
-	<?php elseif($_SESSION['type'] == 'coach'): ?>
+	<?php elseif($_SESSION['type'] == 'coach'):?>
 
 
 		<div id="infoCompte" style="border: 2px solid black; width: 400px; color: black; font-size: 18px; margin-left: 30px; background-color: lightblue;">
@@ -73,11 +73,11 @@ include'login.php'
 			<h3><b>Voici les informations de votre compte</b></h3>
 
 			<p>
-				<b>Nom: </b>  <?php echo  $_SESSION['nom']; ?><br>
-				<b>Prénom: </b> <?php echo  $_SESSION['prenom']; ?><br>
-				<b>Adresse: </b> <?php echo  $_SESSION['Adresse']; ?><br>
-				<b>Email: </b> <?php echo $_SESSION['Email']; ?> <br>
-				<b>Téléphone</b> <?php echo $_SESSION['telephone']; ?><br>
+				<b>Nom: </b>  <?php echo  $_SESSION['nom'];?><br>
+				<b>Prénom: </b> <?php echo  $_SESSION['prenom'];?><br>
+				<b>Adresse: </b> <?php echo  $_SESSION['Adresse'];?><br>
+				<b>Email: </b> <?php echo $_SESSION['Email'];?> <br>
+				<b>Téléphone</b> <?php echo $_SESSION['telephone'];?><br>
 			</p>
 			<p>Si une de ses informations est incorrecte veuillez contacter notre service en ligne</p>
 			
@@ -97,18 +97,21 @@ include'login.php'
 				$sql = mysqli_query($conn, "UPDATE `utilisateur` SET `Online` = 'false' WHERE Email = '$EML'");
 
 				session_destroy();
-				header("location: Accueil.php");
+				echo '<meta http-equiv="refresh" content="1;url=Accueil.php?page=page_Acces" />';
+				//header("location: Accueil.php");
 
 			}
+		
 			else if(isset($_POST['chatroom'])) //S'il clique sur le boutton déconnexion on le déconnecte
 			{
 	
-				header("location: chat.php");
+				echo '<meta http-equiv="refresh" content="1;url=chat.php?page=page_Acces" />';
+				//header("location: chat.php");
 			}
 		?>
 
 		<!-- Si c l'administrateur qui se connecte on affiche ceci -->
-		<?php elseif($_SESSION['type'] == 'admin'): ?>
+		<?php elseif($_SESSION['type'] == 'admin'):?>
 
 
 		<div id="infoCompte" style="border: 2px solid black; width: 400px; color: black; font-size: 18px; margin-left: 30px; background-color: lightblue;">
@@ -128,10 +131,11 @@ include'login.php'
 		<br>
 		<form action="" method="post">
 			<input style="margin-left: 30px;" type="submit" class="btn btn-primary btn-lg" name="deconnexion" value="Se déconnecter">
-			<input style="margin-left: 30px;" type="submit" class="btn btn-warning btn-lg" name="createCV" value="Ajouter un CV de coach">
-			<?php include('suppressioncoach.php');  ?>
-			<?php include('ajoutcoach.php'); ?>
 			
+			<input style="margin-left: 30px;" type="submit" class="btn btn-warning btn-lg" name="createCV" value="Ajouter un CV de coach">
+			<?php include('suppressioncoach.php'); ?>
+			<br>
+			<?php include('ajoutcoach.php'); ?>
 		</form>
 
 		<?php  
@@ -143,17 +147,19 @@ include'login.php'
 				$sql = mysqli_query($conn, "UPDATE `utilisateur` SET `Online` = 'false' WHERE Email = '$EML'");
 
 				session_destroy();
-				header("location: Accueil.php");
+				echo '<meta http-equiv="refresh" content="1;url=Accueil.php?page=page_Acces" />';
+				//header("location: Accueil.php");
 
 			}
 			else if(isset($_POST['createCV'])) //S'il clique sur le boutton déconnexion on le déconnecte
 			{
-				header("location: Accueil.php"); // On redirige vers la page de création
+				echo '<meta http-equiv="refresh" content="1;url=creationCv.php?page=page_Acces" />';
+				//header("location: creationCv.php"); // On redirige vers la page de création
 			}
 
 		?>
-		<?php endif; ?>
+		<?php endif;?>
 
-	<?php endif; ?>
+	<?php endif;?>
 
 
