@@ -122,14 +122,16 @@ include'login.php'
 				<b>Email: </b> <?php echo $_SESSION['Email']; ?> <br>
 				<b>Téléphone</b> <?php echo $_SESSION['telephone']; ?><br>
 			</p>
-			<p>Si une de ses informations est incorrecte veuillez contacter notre service en ligne</p>
+			
 			
 		</div>
 		<br>
 		<form action="" method="post">
 			<input style="margin-left: 30px;" type="submit" class="btn btn-primary btn-lg" name="deconnexion" value="Se déconnecter">
-			<input style="margin-left: 30px;" type="submit" class="btn btn-success btn-lg" name="createCV" value="Ajouter un CV de coach">
-			<input style="margin-left: 30px;" type="submit" class="btn btn-danger btn-lg" name="suppression" value="Ajouter ou supprimer un coach">
+			<input style="margin-left: 30px;" type="submit" class="btn btn-warning btn-lg" name="createCV" value="Ajouter un CV de coach">
+			<?php include('suppressioncoach.php');  ?>
+			<?php include('ajoutcoach.php'); ?>
+			
 		</form>
 
 		<?php  
@@ -148,10 +150,7 @@ include'login.php'
 			{
 				header("location: Accueil.php"); // On redirige vers la page de création
 			}
-			else if(isset($_POST['suppression'])) //S'il clique sur le boutton déconnexion on le déconnecte
-			{
-				header("location: Accueil.php"); // On redirige vers la page de suppression
-			}
+
 		?>
 		<?php endif; ?>
 
