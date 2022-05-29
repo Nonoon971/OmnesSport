@@ -51,6 +51,13 @@ if(isset($_POST['submit']))
 			$_SESSION['Adresse'] = $ADRESSE;
 			$_SESSION['telephone'] = $TEL;
 			$_SESSION['type'] = $TYPE;
+
+			$sql="SELECT ID FROM utilisateur WHERE Email=$EML";
+			$result=mysqli_query($db_handle,$sql); 
+			$data = mysqli_fetch_assoc($result);
+
+			$_SESSION['ID'] = $data['ID'];
+
 			header("location: loginsuccess.php");
 		}
 	}
