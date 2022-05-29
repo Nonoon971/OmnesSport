@@ -197,6 +197,7 @@ body {
 
 }
 
+
 </style>
 </head>
 
@@ -337,7 +338,7 @@ body {
     </div>
     <div class="col-12">
 
-        <button id="myButton" class="btn btn-primary payment" >PAYER</button>
+       <button id="myButton" class="btn btn-primary payment" >PAYER</button>
        <?php  echo "<a href='reservationPaiement.php?Jour=".$Jresa."&Heure=".$Hresa."&Sport=".$Sport."'>PAYER</a>"?>
         <script type="text/javascript">
           document.getElementById("myButton").onclick = function () {

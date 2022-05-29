@@ -6,11 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="cssheaderFooter.css">
 	<title>Reservation ring de boxe</title>
 	<style type="text/css">
-		#nav li:hover ul li
- 		 {
-   			float: none;
-   		    z-index: 999;
- 		 }
+		#section{
+			margin : 0 auto;
+			text-align: center;
+			background-color: #ADD8E6;
+		}
+		h2{
+			background-color: grey;
+		}
+
+		
 	</style>
 </head>
 <body>
