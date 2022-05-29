@@ -1,0 +1,146 @@
+body
+{
+	/*Pour éviter des espaces avec les div*/
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+h1
+{
+	text-align: center;
+	font-size: 60px;
+	color: black;
+	background-image: url("sport.jpg");
+	padding: 20px;
+	margin: 0;
+}
+header
+{
+	background-color: blue;
+}
+
+#nav, #nav ul
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style: none; /*Suppression des puces*/
+}
+#nav li
+{
+	position: relative;
+	display: inline-block;
+	background-color: blue;
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+}
+#nav li a
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+#nav ul li ul
+{
+	display: none; /*On fait disparaitre les sous-menus*/
+}
+#nav li ul
+{
+	position: absolute;
+	float: right;
+}
+
+#nav ul li:hover ul
+{
+	display: block; 
+
+	/*On affiche si la souris passe dessus*/
+}
+#test li
+{
+	background-color: black;
+}
+#test ul li
+{
+	display: none;
+}
+#test:hover ul li
+{
+	display: block;
+	left: 210px;	
+	bottom: 25px;		
+}
+#nav li:hover ul li
+{
+	float: none;
+}
+#nav li a
+{
+	text-decoration: none;
+}
+.popup
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.popup.active
+{
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.377);
+
+}
+
+.popup-content {
+	position: fixed;
+	background-color: transparent;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	height: 90px;
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	transition: top 250ms linear, opacity 200ms linear;
+}
+
+.popup-content.active {
+	opacity: 1;
+	top: 40% !important;
+}
+
+
+.popup-body {
+	height: 80%;
+	padding: 2%;
+	overflow-y: auto;
+	background-color: transparent;
+	margin: 0 auto 20px auto;
+}
+
+#recherche
+{
+	width:250px;
+}
+#searchbtn
+{
+	background-color: darkblue;
+}
+
+footer
+{
+	background-color: black;
+	color: white;
+	clear: left;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.6em;
+}
