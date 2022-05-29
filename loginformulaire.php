@@ -151,11 +151,6 @@ include'login.php'
 				//header("location: Accueil.php");
 
 			}
-			else if(isset($_POST['createCV'])) //S'il clique sur le boutton déconnexion on le déconnecte
-			{
-				echo '<meta http-equiv="refresh" content="1;url=creationCv.php?page=page_Acces" />';
-				//header("location: creationCv.php"); // On redirige vers la page de création
-			}
 
 		?>
 		<?php endif;?>
