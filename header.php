@@ -26,10 +26,9 @@
 							<li><a href="plongeon.php">Plongeon</a></li>
 						</ul>
 					</li>
-					<li id="test"><a href="salle.php">Salle de sport Omnes</a>
+					<li id="test"><a href="#">Salle de sport Omnes</a>
 						<ul>
 							<li><a href="reservation_ring_boxe.php">Ring de boxe</a></li>
-							<li><a href="terrain_tennis.php">Terrain de tennis</a></li>
 						</ul>
 					</li>
 				</ul>
